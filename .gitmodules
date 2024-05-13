@@ -1,7 +1,7 @@
 [submodule "themes/geek"]
 	path = themes/geek
-	url = https://github.com/sanjinhub/hexo-theme-geek.git geek
+	url = https://github.com/sanjinhub/hexo-theme-geek.git
 
 [submodule "themes/particlex"]
 	path = themes/particlex
-	url = https://github.com/theme-particlex/hexo-theme-particlex.git particlex --depth=1
+	url = https://github.com/theme-particlex/hexo-theme-particlex.git
