@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Hexo</title>
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
+    <title>LIN BLOG</title>
+    <meta name="author" content="LIN SHENG" />
+    <meta name="description" content="A LAZY BOY" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
@@ -61,7 +61,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HEXO</span>
+            <span>LIN BLOG</span>
         </a>
         
         <a href="/">
@@ -69,7 +69,7 @@
             <span>&ensp;Home</span>
         </a>
         
-        <a href="/about">
+        <a href="/About">
             <i class="fa-solid fa-id-card fa-fw"></i>
             <span>&ensp;About</span>
         </a>
@@ -93,7 +93,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+            <span>&emsp;LIN BLOG</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -107,7 +107,7 @@
                     </div>
                 </a>
                 
-                <a href="/about">
+                <a href="/About">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-id-card fa-fw"></i>
@@ -165,9 +165,9 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1>Hexo</h1>
-                <h3></h3>
-                <h5></h5>
+                <h1>LIN BLOG</h1>
+                <h3>ABOUT ME</h3>
+                <h5>A LAZY BOY</h5>
             </div>
         </span>
     </div>
@@ -181,8 +181,8 @@
         
 
 <div class="post">
-    <a href="/2024/05/13/hello-world/">
-        <h2 class="post-title">这里对吧</h2>
+    <a href="/2024/05/31/%E5%85%B3%E4%BA%8Envm%E5%AE%89%E8%A3%85node%E7%BC%93%E6%85%A2%E9%97%AE%E9%A2%98/">
+        <h2 class="post-title">关于nvm安装node缓慢问题</h2>
     </a>
     <div class="category-and-date">
         
@@ -190,7 +190,7 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2024/5/13
+            2024/5/31
         </span>
         
         
@@ -198,19 +198,17 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <h3 id="出现场景"><a href="#出现场景" class="headerlink" title="出现场景"></a>出现场景</h3><pre><code class="node">$ nvm intsall [node version]
+</code></pre>
+<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><pre><code class="text">大致是什么地址未找到,timeOut!
+</code></pre>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><pre><code class="bash">$ where nvm
+# 找到对应的目录下的settings.txt
+# 设置npm_mirror:
+nvm npm_mirror: https://npmmirror.com/mirrors/npm/
+# 设置node_mirror:
+nvm node_mirror: https://npmmirror.com/mirrors/node/
+</code></pre>
 
             
         </div>
@@ -220,7 +218,7 @@
         
         
     </div>
-    <a href="/2024/05/13/hello-world/" class="go-post">阅读全文</a>
+    <a href="/2024/05/31/%E5%85%B3%E4%BA%8Envm%E5%AE%89%E8%A3%85node%E7%BC%93%E6%85%A2%E9%97%AE%E9%A2%98/" class="go-post">阅读全文</a>
 </div>
 
 
@@ -241,7 +239,7 @@
         <div class="avatar">
             <img src="/images/avatar.jpg" alt="avatar" />
         </div>
-        <div class="name">John Doe</div>
+        <div class="name">LIN SHENG</div>
         <div class="description">
             <p>Description<br>…</p>
 
@@ -267,11 +265,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2024 Hexo
+            2022 - 2024 LIN BLOG
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;John Doe
+            &commat;LIN SHENG
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
